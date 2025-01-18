@@ -1,0 +1,54 @@
+/* Container for the entire dashboard page */
+.dashboard-container {
+    padding: 2rem;
+  }
+  
+  /* Title Styling */
+  .dashboard-title {
+    text-align: center;
+    color: #1976d2; /* Material UI Primary Color */
+    font-weight: bold;
+  }
+  
+  /* List Styling */
+  .features-list {
+    margin-bottom: 2rem;
+  }
+  
+  /* Feature List Item Styling */
+  .feature-item {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button Styling */
+  .dashboard-cta-button {
+    margin-top: 2rem;
+    background-color: #1976d2;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: none;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design for smaller screens */
+  @media screen and (max-width: 768px) {
+    .dashboard-container {
+      padding: 1rem;
+    }
+  
+    .dashboard-title {
+      font-size: 1.5rem;
+    }
+  
+    .feature-item {
+      font-size: 0.9rem;
+    }
+  
+    .dashboard-cta-button {
+      width: 100%;
+      padding: 12px 0;
+    }
+  }
+  

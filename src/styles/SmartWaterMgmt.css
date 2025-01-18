@@ -1,0 +1,80 @@
+.smart-water-mgmt {
+    background-color: #f4f9f9;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .smart-water-title {
+    font-size: 2rem;
+    color: #0d47a1;
+    margin-bottom: 20px;
+  }
+  
+  .smart-water-content {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .benefits-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .motion-card {
+    will-change: opacity, transform;
+  }
+  
+  .benefit-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .benefit-image {
+    object-fit: cover;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .benefit-name {
+    font-size: 1rem;
+    color: #212121;
+    margin-top: 10px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 960px) {
+    .smart-water-title {
+      font-size: 1.8rem;
+    }
+  
+    .smart-water-content {
+      font-size: 1rem;
+    }
+  
+    .benefit-card {
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .smart-water-title {
+      font-size: 1.5rem;
+    }
+  
+    .smart-water-content {
+      font-size: 0.9rem;
+    }
+  
+    .benefit-card {
+      margin: 5px;
+    }
+  }
+  

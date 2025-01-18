@@ -1,0 +1,171 @@
+{
+  "header": {
+    "logo": "Smart Water Solutions",
+    "navigation": [
+      { "label": "Home", "path": "/" },
+      { "label": "Products", "path": "/products" },
+      { "label": "Dashboard", "path": "/dashboard" },
+      { "label": "FAQs", "path": "/faqs" },
+      { "label": "Blog", "path": "/blog" },
+      { "label": "About Us", "path": "/about" },
+      { "label": "Contact Us", "path": "/contact" }
+    ]
+  },
+  "hero": {
+    "headline": "Smart Water Management Solutions with IoT and AI",
+    "cta": "Get a Call",
+    "subheadline": "Empowering sustainable water usage across industries",
+    "carouselImages": [
+      "https://goldenmace.com/blog/wp-content/uploads/2019/07/smart-water-1.png ",
+
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fsmart-water-logo%3Fpage%3D2&psig=AOvVaw3eD2Sz_Q_j9pPQXWp4QrvZ&ust=1737015234609000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCODHxrOk94oDFQAAAAAdAAAAABAQ"
+    ]
+  },
+  "sections": [
+    {
+      "title": "Why Smart Water Management?",
+      "content": "Our solutions help detect leaks, optimize water usage, and ensure compliance with government regulations.",
+      "benefits": [
+        { "name": "Leak Detection", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_krPG8_7LrZRdrdrms6cDYfugMF6rNrMXQA&s" },
+        { "name": "Optimize Water Usage", "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6oV3t27PaP6bO-g0a3evZRZ6veU6bMy2UQ&s"},
+        { "name": "Save Costs", "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiQT_r0dLFLxSpwv81dvBGpS_3KbguezNPQQ&s" },
+        { "name": "Government Compliance", "image": "https://www.shutterstock.com/image-photo/compliance-concept-businessman-holding-key-260nw-2351842723.jpg" }
+      ]
+    },
+    {
+      "title": "How It Works",
+      "content": "Using Smart Piezometers, Flow Meters, and IoT-enabled dashboards, we provide real-time monitoring and alerts.",
+      "image": "https://www.hashstudioz.com/blog/wp-content/uploads/2023/12/Smart-Water-Management-.webp"
+    },
+    {
+      "title": "Our Products",
+      "content": "Discover our range of IoT-enabled devices for residential, industrial, and agricultural water management.",
+      "image":"https://s3.amazonaws.com/s3-biz4intellia/images/iiot-roundup-of-market-estimate-and-its-phases.jpg",
+      "products": [
+        {
+          "name": "Smart Flow Meter",
+          "description": "Real-time water flow tracking and usage .",
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQlNQq2IF4fbyHHFfGKB2Fz8FdOEZShzODGmaebHfWyxLTKtNTCmLOVFIldVei9INoVSTxA4IiRvQGf0Z3tfvU-vU148V--fSBhmbVhpOX2rDWMHI5QmNpj"
+        },
+        {
+          "name": "Smart Piezometer",
+          "description": "Groundwater monitoring device with alerts.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrJSV3fPOlMe5CpCxhBYQy4YnOwNzTksFrA&s"
+        },
+        {
+          "name": "Smart Drip System",
+          "description": "Precision irrigation system for farms.",
+          "image": "https://wiseconn.com/wp-content/uploads/2024/10/smart-irrigation-controller-copia.webp"
+        }
+      ]
+    },
+    {
+      "title": "Success Stories",
+      "content": "See how our solutions have transformed water management across industries.",
+      "caseStudies": [
+        {
+          "name": "Case Study A",
+          "description": "Reduced water wastage by 40% in an industrial plant.",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgTxGucY1h89U2GQg8jM6bsl28vuP-R2jmhw&s"
+        },
+        {
+          "name": "Case Study B",
+          "description": "Optimized irrigation systems for a 200-acre farm.",
+          "image": "https://www.shutterstock.com/image-photo/automatic-sprinkler-irrigation-system-watering-260nw-2498509027.jpg"
+        },
+        {
+          "name": "Case Study c",
+          "description": "Achieved a 30% energy savings through optimized water.",
+
+          "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1MBqce6Bvl_v97TyE4mw_I1QYE9Q-7Bq6hw&s"
+        }
+        
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Client A",
+      "content": "The Smart Piezometer significantly improved our groundwater monitoring process."
+    },
+    {
+      "name": "Client B",
+      "content": "We've reduced water wastage by 30% since adopting this technology."
+    },
+    {
+      "name": "Client C",
+      "content": "Their IoT-enabled dashboard is a game changer for real-time monitoring."
+    }
+  ],
+  "about": {
+    "mission": "To revolutionize water management using IoT and AI.",
+    "vision": "Achieve sustainable water usage worldwide.",
+    "team": [
+      { "name": "John Doe", "role": "CEO" },
+      { "name": "Jane Smith", "role": "CTO" }
+    ]
+  },
+  "contact": {
+    "formFields": ["Name", "Email", "Phone", "Message"],
+    "support": {
+      "phone": "+123456789",
+      "email": "support@smartwater.com",
+      "address": "123 Smart Water Lane, Innovation City, World"
+    }
+  },
+  "faqs": [
+    {
+      "question": "What is smart water management?",
+      "answer": "Smart water management involves using IoT and AI to optimize water usage and prevent wastage."
+    },
+    {
+      "question": "Do your products detect leaks?",
+      "answer": "Yes, all our products are equipped with real-time leak detection capabilities."
+    },
+    {
+      "question": "Can I integrate your solutions with my existing system?",
+      "answer": "Yes, our systems are designed to integrate seamlessly with existing infrastructure."
+    },
+    {
+      "question": "Is it suitable for outdoor environments?",
+      "answer": "Yes, it is designed for harsh environmental conditions with IP68 waterproofing.."
+    },
+    {
+      "question": "How does it connect to the IoT dashboard?",
+      "answer": "Via GSM, Wi-Fi, or Bluetooth, depending on the model."
+    },
+    {
+      "question": "What is the maintenance schedule?",
+      "answer": "Minimal maintenance required, with recommendations for bi-annual calibration checks."
+    }
+
+
+
+  ],
+  "dashboard": {
+    "features": [
+      "Real-time water usage monitoring",
+      "Predictive maintenance alerts",
+      "Customizable dashboards for industries, farms, and housing societies"
+    ],
+    "cta": "Schedule a Demo"
+  },
+  "blog": [
+    {
+      "title": "5 Benefits of IoT in Water Management",
+      "excerpt": "Learn how IoT revolutionizes water usage and efficiency.",
+      "link": "/blog/5-benefits"
+    },
+    {
+      "title": "How AI Helps Optimize Irrigation Systems",
+      "excerpt": "Discover how AI can transform agriculture.",
+      "link": "/blog/ai-irrigation"
+    },
+    {
+      "title": "Smart Water Management in Urban Areas",
+      "excerpt": "Learn how smart technologies are improving water  .",
+      "link": "/blog/smart-water-management"
+    }
+    
+  ]
+}

@@ -1,0 +1,95 @@
+/* General styling for the product page container */
+.products-container {
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.products-title {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Grid layout styling for the product cards */
+.product-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card media styling */
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Product title and description styling */
+.product-card .MuiTypography-h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 15px;
+}
+
+.product-card .MuiTypography-body2 {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-top: 8px;
+}
+
+/* List of product features styling */
+.product-features {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.product-features li {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  .products-container {
+    padding: 20px;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-card img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-title {
+    font-size: 24px;
+  }
+
+  .product-card {
+    max-width: 100%;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+}

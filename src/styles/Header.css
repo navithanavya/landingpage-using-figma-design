@@ -1,0 +1,73 @@
+/* Base styles for the Header */
+.header-appbar {
+  background-color: #1976d2; /* Material UI primary color */
+}
+
+.header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Padding for spacing inside toolbar */
+}
+
+.header-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white; /* White color for the logo */
+}
+
+.header-navigation {
+  display: flex;
+  gap: 10px; /* Space between navigation buttons */
+}
+
+.header-button {
+  text-transform: none; /* Avoid uppercase text for button labels */
+  font-weight: 500;
+  color: white; /* White color for buttons */
+  padding: 8px 16px; /* Button padding */
+  border-radius: 4px; /* Rounded button edges */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover effect for buttons */
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+}
+
+/* Media query for smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .header-toolbar {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+    padding: 10px; /* Add padding for better spacing */
+  }
+
+  .header-logo {
+    font-size: 1.2rem; /* Slightly smaller logo font size */
+    margin-bottom: 10px; /* Space between logo and navigation */
+  }
+
+  .header-navigation {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 8px; /* Reduced gap between buttons */
+  }
+
+  .header-button {
+    font-size: 0.9rem; /* Smaller button font size */
+    padding: 8px 16px; /* Adjust padding to fit smaller screens */
+  }
+}
+
+/* Media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .header-logo {
+    font-size: 1rem; /* Further reduce the logo size */
+  }
+
+  .header-button {
+    font-size: 0.8rem; /* Further reduce button font size */
+    padding: 6px 12px; /* Adjust padding for compactness */
+  }
+}
