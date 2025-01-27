@@ -1,11 +1,13 @@
-.footer {
-    background-color:#1976d2;
-    color: pink;
-    padding: 20px;
-    text-align: center;
+@media (max-width: 600px) {
+  .MuiTypography-subtitle1 {
+    font-size: 14px;
   }
-  
-  .footer-text {
+
+  .MuiTypography-body2 {
+    font-size: 12px;
+  }
+
+  .MuiButton-containedPrimary {
     font-size: 10px;
   }
-  
+}

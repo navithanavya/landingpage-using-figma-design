@@ -12,7 +12,7 @@
       "resolveJsonModule": true,
       "noEmit": true
     },
-    "include": ["src/**/*", "src/components/FallbackImage.tsx"],
+    "include": ["src/**/*", "src/Component/FallbackImage.tsx"],
     "exclude": ["node_modules"]
   }
   

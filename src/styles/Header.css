@@ -1,73 +1,129 @@
-/* Base styles for the Header */
-.header-appbar {
-  background-color: #1976d2; /* Material UI primary color */
+/* Basic header styles */
+.header {
+  color: black;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #FFFFFF !important;
 }
 
-.header-toolbar {
+.toolbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Padding for spacing inside toolbar */
+  justify-content: space-between;
+  padding: 10px 24px;
+  min-height: 64px;
 }
 
-.header-logo {
-  font-weight: bold;
-  font-size: 1.5rem;
-  color: white; /* White color for the logo */
-}
-
-.header-navigation {
+.logo-container {
   display: flex;
-  gap: 10px; /* Space between navigation buttons */
+  align-items: center;
 }
 
-.header-button {
-  text-transform: none; /* Avoid uppercase text for button labels */
-  font-weight: 500;
-  color: white; /* White color for buttons */
-  padding: 8px 16px; /* Button padding */
-  border-radius: 4px; /* Rounded button edges */
-  background-color: transparent; /* Transparent background */
-  transition: background-color 0.3s ease; /* Smooth background transition */
+.icon-button {
+  margin-right: 8px;
 }
 
-/* Hover effect for buttons */
-.header-button:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* Light hover effect */
+.circle-icon {
+  color: #008000;
+  font-size: 1.5rem;
 }
 
-/* Media query for smaller screens (max-width: 768px) */
+.logo-text {
+  color: #008000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Styles for hamburger menu */
+.hamburger-menu {
+  position: absolute;
+  top: 16px;
+  right: 24px; /* Positions the hamburger icon in the top-right corner */
+  color: black;
+}
+
+.hamburger-menu .MuiSvgIcon-root {
+  font-size: 30px;
+}
+.hamburger-menu {
+  display: block !important; /* Force visibility */
+}
+
+
+/* Updated nav buttons style for larger screens */
+.nav-buttons {
+  display: flex;
+  gap: 24px; /* Increased gap between the buttons */
+}
+
+.nav-button {
+  text-transform: none;
+  padding: 6px 10px;
+  color: black !important;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.nav-buttons .nav-button:hover {
+  color: #008000; /* Green color on hover */
+}
+
+/* More specific selector for the sign-in button to override Material UI styles */
+.sign-in-button {
+  color: white;
+  border-radius: 20px;
+  padding: 8px 20px;
+  background-color: #28a745 !important; /* Green background, with !important to override Material UI */
+  text-transform: none;
+  font-weight: bold;
+  border: none;
+}
+
+.sign-in-button:hover {
+  background-color: #218838 !important; /* Darker green for hover effect */
+}
+
+
+.hamburger-menu {
+  display: none;
+}
+
+@media (max-width: 960px) { /* Adjust the max-width to match your breakpoint */
+  .hamburger-menu {
+    display: block; /* Make the hamburger icon visible */
+  }
+}
+
+/* Mobile and tablet responsive styles */
 @media (max-width: 768px) {
-  .header-toolbar {
-    flex-direction: column; /* Stack elements vertically */
-    align-items: flex-start; /* Align items to the left */
-    padding: 10px; /* Add padding for better spacing */
+  .toolbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
   }
 
-  .header-logo {
-    font-size: 1.2rem; /* Slightly smaller logo font size */
-    margin-bottom: 10px; /* Space between logo and navigation */
+  .logo-container {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  .header-navigation {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 8px; /* Reduced gap between buttons */
+  .nav-buttons {
+    display: none; /* Hide the nav buttons on mobile */
   }
 
-  .header-button {
-    font-size: 0.9rem; /* Smaller button font size */
-    padding: 8px 16px; /* Adjust padding to fit smaller screens */
+  .sign-in-button {
+    display: none; /* Hide sign-in button on mobile */
+  }
+
+  .hamburger-menu {
+    display: block; /* Make hamburger menu visible on mobile */
   }
 }
 
-/* Media query for very small screens (max-width: 480px) */
 @media (max-width: 480px) {
-  .header-logo {
-    font-size: 1rem; /* Further reduce the logo size */
-  }
-
-  .header-button {
-    font-size: 0.8rem; /* Further reduce button font size */
-    padding: 6px 12px; /* Adjust padding for compactness */
+  .logo-text {
+    font-size: 1.2rem;
   }
 }

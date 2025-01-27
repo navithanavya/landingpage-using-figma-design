@@ -1,39 +1,47 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import LandingPage from "./pages/LandingPage";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
-import ProductsPage from "./pages/ProductsPage";
-import DashboardPage from "./pages/DashboardPage";
-import FAQsPage from "./pages/FAQsPage";
-import BlogPage from "./pages/BlogPage";
+// src/App.tsx
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Box } from '@mui/material';
+import Header from './components/Header';
+import Home from './pages/Home';
+import Footer from './components/Footer'; // Import the Footer component
+import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
+const theme = createTheme();
 
-
-
-const App: React.FC = () => {
+const App = () => {
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path="/products" element={<ProductsPage />} />
-        {/* <Route path="/products/:id" component={ProductPage} /> */}
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Router>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            minHeight: '100vh',
+          }}
+        >
+          <Header />
 
-        <Route path="/dashboard" element={<DashboardPage />} />
-        <Route path="/faqs" element={<FAQsPage />} />
-        <Route path="/blog" element={<BlogPage />} />
+          <Box
+            component="main"
+            sx={{
+              flexGrow: 1,
+              padding: '2rem',
+              backgroundColor: '#f5f5f5',
+            }}
+          >
+            <Routes>
+              <Route path="/" element={<Home />} />
+              {/* Other routes */}
+            </Routes>
+          </Box>
 
-
-
-        
-      </Routes>
-      <Footer />
-    </Router>
+          <Footer /> {/* Render the Footer component here */}
+        </Box>
+      </Router>
+    </ThemeProvider>
   );
 };
 

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -34,5 +35,19 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/* Default styles for larger screens */
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* Styles for smaller screens (e.g., less than 768px wide) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Take full width on smaller screens */
+    margin: 10px 0; /* Adjust margins */
+    padding: 10px;
   }
 }
