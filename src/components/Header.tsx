@@ -6,19 +6,17 @@ import MenuIcon from '@mui/icons-material/Menu'; // Import hamburger icon
 import '../styles/Header.css';
 
 const Header: React.FC = () => {
-  // State to control the Drawer open/close
   const [drawerOpen, setDrawerOpen] = useState(false);
-
-  // MUI hook to handle responsiveness (mobile/tablet view)
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('md')); // "md" is for tablet and mobile view
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'));
 
-  // Handle opening and closing the drawer
+  // Debugging isMobile
+  console.log("isMobile:", isMobile);
+
   const toggleDrawer = (open: boolean) => {
     setDrawerOpen(open);
   };
 
-  // Drawer content (for mobile view)
   const drawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={() => toggleDrawer(false)}>
       <List>
@@ -47,12 +45,12 @@ const Header: React.FC = () => {
   return (
     <AppBar position="static" className="header">
       <Toolbar className="toolbar">
-        <Box className="logo-container">
+        <Box className="logo-container" sx={{ marginLeft: '45px' }}>
           <IconButton edge="start" color="inherit" aria-label="menu" className="icon-button">
             <CircleIcon className="circle-icon" />
           </IconButton>
-          <Typography variant="h6" component={Link} to="/" className="logo-text">
-            ADVANTA
+          <Typography variant="h6" component={Link} to="/" className="logo-text" sx={{ marginLeft: '20px' ,fontFamily: 'Krona One' }} >
+          ADYANTA
           </Typography>
         </Box>
 
@@ -83,7 +81,7 @@ const Header: React.FC = () => {
         {/* Desktop view: Show sign-in button */}
         {!isMobile && (
           <Box>
-            <Button variant="contained" className="sign-in-button">
+            <Button variant="contained" className="sign-in-button" sx={{ marginRight: '60px' ,borderRadius:"50px"}}>
               Sign In
             </Button>
           </Box>

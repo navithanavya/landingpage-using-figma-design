@@ -59,6 +59,7 @@
     "@types/react-dom": "^19.0.3",
     "@types/react-router-dom": "^5.3.3",
     "@types/testing-library__react": "^10.0.1",
+    "eslint-config-react-app": "^7.0.1",
     "rimraf": "^6.0.1"
   }
 }

@@ -25,20 +25,40 @@
 .circle-icon {
   color: #008000;
   font-size: 1.5rem;
+  right: 20px;
 }
+ .logo-container.h6{
+  font-family: Krona One;
+font-size: 28px;
+font-weight: 400;
+line-height: 35px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+ }
 
 .logo-text {
   color: #008000;
   font-weight: bold;
   text-decoration: none;
+  font: Krona One ;
+  font-family: Krona One;
+font-size: 24px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
 
 /* Styles for hamburger menu */
 .hamburger-menu {
   position: absolute;
-  top: 16px;
-  right: 24px; /* Positions the hamburger icon in the top-right corner */
-  color: black;
+  top: -50px;
+  left: 45%;  /* Adjust this value as needed */
+  z-index: 1201;
 }
 
 .hamburger-menu .MuiSvgIcon-root {
@@ -82,17 +102,10 @@
 .sign-in-button:hover {
   background-color: #218838 !important; /* Darker green for hover effect */
 }
-
-
-.hamburger-menu {
-  display: none;
+.hamburger-menu .MuiSvgIcon-root {
+  color: green;
 }
 
-@media (max-width: 960px) { /* Adjust the max-width to match your breakpoint */
-  .hamburger-menu {
-    display: block; /* Make the hamburger icon visible */
-  }
-}
 
 /* Mobile and tablet responsive styles */
 @media (max-width: 768px) {
