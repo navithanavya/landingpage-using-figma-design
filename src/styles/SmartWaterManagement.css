@@ -1,0 +1,233 @@
+/* 🌊 Overall Container */
+.smart-water-container {
+  width: 100%;
+  background-color: #eeeef1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Default stacking */
+  align-items: center;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* 📌 Section Layout */
+.section {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Default stacking */
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+/* 🏷️ Title Styling */
+.title-container {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Howitworks {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* 🔲 Box Styling */
+.box {
+  width: 100%; /* Full width by default */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  background-color: #EEEFF1;
+}
+
+/* 🖼️ Image Styling */
+.box img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 🖥️ Desktop View (1024px and above) */
+@media (min-width: 1024px) {
+  .section {
+    flex-direction: row; /* Side by side for desktop */
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 48%; /* Side by side with some space */
+  }
+}
+
+/* 📊 Tablet View (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Only apply to Section 1 */
+  .section-one {
+    flex-direction: column !important; /* Force stacking vertically on tablet */
+    align-items: center;
+  }
+
+  .section-one .box {
+    width: 85%; /* Increased width to 85% */
+    margin-bottom: 30px; /* Space between stacked boxes */
+  }
+
+  /* Swap the positions of Box 1 and Box 2 in Section 1 */
+  .section-one .box:nth-child(1) {
+    order: 2; /* Box 1 moves to position of Box 2 */
+  }
+
+  .section-one .box:nth-child(2) {
+    order: 1; /* Box 2 moves to position of Box 1 */
+  }
+
+  /* Section 2: Force stacking for step-by-step */
+  .section-two {
+    flex-direction: column !important; /* Stack vertically on tablet */
+    align-items: center;
+  }
+
+  .section-two .box {
+    width: 85%; /* Increased box width for Section 2 */
+    margin-bottom: 30px; /* Space between stacked boxes */
+  }
+
+  .Howitworks {
+    font-size: 1.8rem;
+  }
+}
+
+/* 📱 Mobile View (Max 768px) */
+@media (max-width: 768px) {
+  /* Only apply to Section 1 */
+  .section-one {
+    flex-direction: column !important; /* Stack vertically on mobile */
+  }
+
+  .section-one .box {
+    width: 100%; /* Full width for each box */
+    margin-bottom: 30px; /* Space between stacked boxes */
+  }
+
+  /* Swap the positions of Box 1 and Box 2 in Section 1 */
+  .section-one .box:nth-child(1) {
+    order: 2; /* Box 1 moves to position of Box 2 */
+  }
+
+  .section-one .box:nth-child(2) {
+    order: 1; /* Box 2 moves to position of Box 1 */
+  }
+
+  /* Section 2: Force stacking for step-by-step */
+  .section-two {
+    flex-direction: column !important; /* Stack vertically on mobile */
+    align-items: center;
+  }
+
+  .section-two .box {
+    width: 100%; /* Full width for each box */
+    margin-bottom: 30px; /* Space between stacked boxes */
+  }
+
+  .smart-water-container {
+    padding: 10px;
+  }
+}
+/* For desktop and larger screens */
+@media (min-width: 1024px) {
+  .Howitworks {
+    text-align: left;
+  }
+}
+
+/* 📊 Tablet View (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Howitworks {
+    text-align: left; /* Align text to the left on tablet */
+  }
+}
+
+/* 📱 Mobile View (Max 768px) */
+@media (max-width: 768px) {
+  .Howitworks {
+    text-align: left; /* Align text to the left on mobile */
+  }
+}
+
+/* 📊 Tablet View (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .works {
+    text-align: left; /* Align text to the left on tablet */
+  }
+}
+
+/* 📱 Mobile View (Max 768px) */
+@media (max-width: 768px) {
+  .works {
+    text-align: left; /* Align text to the left on mobile */
+  }
+}
+/* Desktop View */
+@media (min-width: 769px) {
+  .box {
+    position: relative; /* Ensure the box is positioned relative for absolute positioning */
+  }
+
+  .get-a-call-button {
+    position: absolute; /* Absolute positioning of the button */
+    top: 12%; /* Position button at 70% from the top */
+    right: 9%; /* Position the button 5% from the right */
+    padding: 10px 20px;
+    background-color: #006F4E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10; /* Ensure it appears above other content */
+  }
+}
+/* Mobile View: Adjust the button position to the top-right corner */
+@media (max-width: 768px) {
+  .box {
+    position: relative; /* Ensure that box has a relative position for absolute positioning */
+  }
+
+  .get-a-call-button {
+    position: absolute; /* Absolutely position the button */
+    top: -35%; /* Adjust this value to move the button vertically */
+    right: 0%; /* Move the button to the right side of the box */
+    padding: 10px 20px;
+    background-color: #006F4E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+
+/* Tablet View: Adjust button position */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .box {
+    position: relative; /* Ensure the box is positioned relative for absolute positioning */
+  }
+
+  .get-a-call-button {
+    position: absolute;
+    top: 40%; /* Adjust this value for vertical positioning on tablet */
+    right: -5%; /* Adjust this value for right alignment on tablet */
+    padding: 10px 20px;
+    background-color: #006F4E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}
+

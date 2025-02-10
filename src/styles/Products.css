@@ -1,0 +1,144 @@
+/* Base Styles - Desktop (large screens) */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    font-size: 2rem;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 240px;
+    background-color: #ccc;
+    border-radius: 8px;
+  }
+  
+  .certifications .cert-image {
+    width: 100%;
+    height: 180px;
+    background-color: #ccc;
+    border-radius: 8px;
+  }
+  
+  /* ========================= */
+/* Mobile Styles (Max 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+    .mobile-menu {
+      border-radius: 10px;
+      padding: 0.5rem;
+      background-color: #1A3D36;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .mobile-menu-icon {
+      color: #fff;
+    }
+  
+    .mobile-drawer {
+      text-align: left;
+    }
+  
+    .product-details {
+      padding: 1rem;
+    }
+  
+    .product-image {
+      height: 200px;
+    }
+  
+    .certification-image {
+      height: 150px;
+    }
+  
+    .products-title {
+      font-size: 1.75rem;
+      text-align: center;
+    }
+  
+    .specifications-title {
+      font-size: 1.1rem;
+    }
+  
+    .certification-text {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* ============================ */
+  /* Tablet Styles (768px - 1024px) */
+  /* ============================ */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .products-content {
+      padding: 1.5rem;
+    }
+  
+    .product-details {
+      padding: 1.5rem;
+    }
+  
+    .product-image {
+      height: 220px;
+    }
+  
+    .certification-image {
+      height: 160px;
+    }
+  
+    .products-title {
+      font-size: 2rem;
+    }
+  
+    .specifications-title {
+      font-size: 1.2rem;
+    }
+  
+    .certification-text {
+      font-size: 1rem;
+    }
+  }
+  
+  /* ================================= */
+  /* Desktop Large Screens (1025px+) */
+  /* ================================= */
+  @media (min-width: 1025px) {
+    .products-content {
+      padding: 2rem;
+      max-width: 1200px;
+    }
+  
+    .product-details {
+      padding: 2rem;
+    }
+  
+    .product-image {
+      height: 240px;
+    }
+  
+    .certification-image {
+      height: 180px;
+    }
+  
+    .products-title {
+      font-size: 2.5rem;
+    }
+  
+    .specifications-title {
+      font-size: 1.4rem;
+    }
+  
+    .certification-text {
+      font-size: 1.1rem;
+    }
+  }
+  

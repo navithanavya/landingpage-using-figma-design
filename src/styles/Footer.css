@@ -1,27 +1,130 @@
-  @media (max-width: 600px) {
-  .MuiTypography-subtitle1 {
-    font-size: 14px;
+/* Default Styles for Desktop */
+footer {
+  background-color: #0A3039;
+  color: white;
+  padding: 2rem 1rem;
+  width: 98%;
+}
+
+footer .logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2%;
+}
+
+footer .email-input {
+  background-color: white;
+  border-radius: 8px;
+  max-width: 85%;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+footer .nav-links {
+  margin-top: 3%;
+  column-gap: 30px;
+}
+
+footer .footer-text {
+  color: #033333;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  flex-grow: 1;
+  text-align: left;
+}
+
+footer .social-icons {
+  display: flex;
+  gap: 0rem;
+  padding-right: 5rem;
+  padding-left: 3rem;
+  justify-content: flex-start;
+}
+
+footer .icon-box {
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+/* Media Queries for Tablet and Mobile Screens */
+
+/* Tablets and larger screens (smaller than large desktops) */
+@media (max-width: 900px) {
+  footer {
+    padding: 1rem;
+    width: 100%;
   }
 
-  .MuiTypography-body2 {
-    font-size: 12px;
+  footer .logo-section {
+    align-items: center;
+    margin-top: 1%;
   }
 
-  .MuiButton-containedPrimary {
-    font-size: 10px;
+  footer .email-input {
+    margin-left: 10px;
+    margin-right: 10px;
   }
-} 
 
+  footer .nav-links {
+    margin-top: 2%;
+    column-gap: 15px;
+  }
 
+  footer .footer-text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
 
+  footer .social-icons {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    justify-content: center;
+  }
+}
 
+/* Small devices (mobiles) */
+@media (max-width: 600px) {
+  footer {
+    padding: 0.5rem;
+  }
 
+  footer .logo-section {
+    align-items: center;
+    margin-top: 2%;
+  }
 
+  footer .email-input {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
+  footer .nav-links {
+    margin-top: 1%;
+    column-gap: 10px;
+  }
 
+  footer .nav-links .nav-link-item {
+    text-align: center;
+    margin-bottom: 5px;
+  }
 
+  footer .footer-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
 
+  footer .social-icons {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: center;
+  }
 
-
-
-
+  footer .icon-box {
+    padding: 0.3rem;
+  }
+}

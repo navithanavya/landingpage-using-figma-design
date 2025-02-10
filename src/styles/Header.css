@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 24px;
-  min-height: 64px;
+  min-height: 96px;
 }
 
 .logo-container {
@@ -22,52 +22,37 @@
   margin-right: 8px;
 }
 
-.circle-icon {
-  color: #008000;
-  font-size: 1.5rem;
-  right: 20px;
-}
- .logo-container.h6{
+.logo-container h6 {
   font-family: Krona One;
-font-size: 28px;
-font-weight: 400;
-line-height: 35px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
- }
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left; /* Default left alignment */
+  text-decoration: none;
+}
 
 .logo-text {
   color: #008000;
   font-weight: bold;
   text-decoration: none;
-  font: Krona One ;
   font-family: Krona One;
-font-size: 24px;
-font-weight: 400;
-line-height: 30px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-
 }
 
 /* Styles for hamburger menu */
 .hamburger-menu {
   position: absolute;
-  top: -50px;
-  left: 45%;  /* Adjust this value as needed */
+  top: -60px;
+  left: 45%; /* Adjust this value as needed */
   z-index: 1201;
 }
 
 .hamburger-menu .MuiSvgIcon-root {
   font-size: 30px;
 }
+
 .hamburger-menu {
   display: block !important; /* Force visibility */
 }
-
 
 /* Updated nav buttons style for larger screens */
 .nav-buttons {
@@ -91,21 +76,22 @@ text-decoration-skip-ink: none;
 /* More specific selector for the sign-in button to override Material UI styles */
 .sign-in-button {
   color: white;
-  border-radius: 20px;
   padding: 8px 20px;
-  background-color: #28a745 !important; /* Green background, with !important to override Material UI */
+  background-color: #28a745 !important; /* Green background */
   text-transform: none;
   font-weight: bold;
   border: none;
+  display: none; /* Hide sign-in button on mobile */
+
 }
 
 .sign-in-button:hover {
   background-color: #218838 !important; /* Darker green for hover effect */
 }
+
 .hamburger-menu .MuiSvgIcon-root {
   color: green;
 }
-
 
 /* Mobile and tablet responsive styles */
 @media (max-width: 768px) {
@@ -116,10 +102,16 @@ text-decoration-skip-ink: none;
   }
 
   .logo-container {
-    margin-bottom: 10px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Keep the image on the left */
+    margin-bottom: 10px;
+  }
+
+  /* Center only the ADYANTA text on mobile */
+  .logo-container h6 {
+    text-align: center; /* Center the ADYANTA text */
+    flex: 1; /* Take full width of the container */
   }
 
   .nav-buttons {
@@ -137,6 +129,6 @@ text-decoration-skip-ink: none;
 
 @media (max-width: 480px) {
   .logo-text {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Adjust font size for smaller screens */
   }
 }

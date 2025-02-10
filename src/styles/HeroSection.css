@@ -1,0 +1,85 @@
+/* Default styling (for larger screens) */
+.smart-water-management-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+  
+  background-color: white;
+  padding: 40px;
+}
+
+.smart-water-management-text-container {
+  text-align: center;
+}
+
+.smart-water-management-heading {
+  font-weight: bold;
+  color: black; /* Primary color */
+  margin-bottom: 20px;
+}a
+
+.smart-water-management-subheading {
+  font-weight: bold;
+  color: black; /* Primary color */
+  margin-bottom: 20px;
+}
+
+.smart-water-management-body {
+  color: #388e3c; /* Green color */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .smart-water-management-container {
+    padding: 30px;
+  }
+
+  .smart-water-management-heading {
+    font-size: 1.8rem;
+  }
+
+  .smart-water-management-subheading {
+    font-size: 1.5rem;
+  }
+
+  .smart-water-management-body {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .smart-water-management-container {
+    padding: 20px;
+  }
+
+  .smart-water-management-heading {
+    font-size: 1.6rem;
+  }
+
+  .smart-water-management-subheading {
+    font-size: 1.4rem;
+  }
+
+  .smart-water-management-body {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .smart-water-management-container {
+    padding: 15px;
+  }
+
+  .smart-water-management-heading {
+    font-size: 1.4rem;
+  }
+
+  .smart-water-management-subheading {
+    font-size: 1.2rem;
+  }
+
+  .smart-water-management-body {
+    font-size: 0.8rem;
+  }
+}

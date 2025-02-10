@@ -1,47 +1,28 @@
 // src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Box } from '@mui/material';
 import Header from './components/Header';
-import Home from './pages/Home';
+import OurSolutions from './components/OurSolutions';
+import Products from './components/Products';
+import OurClients from './components/OurClients';
+import HeroSection from './components/HeroSection';
+import SmartWaterManagement from './components/SmartWaterManagement';
 import Footer from './components/Footer'; // Import the Footer component
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 
-const theme = createTheme();
 
-const App = () => {
+
+
+const App: React.FC = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Router>
-        <Box
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            minHeight: '100vh',
-          }}
-        >
-          <Header />
-
-          <Box
-            component="main"
-            sx={{
-              flexGrow: 1,
-              padding: '2rem',
-              backgroundColor: '#f5f5f5',
-            }}
-          >
-            <Routes>
-              <Route path="/" element={<Home />} />
-              {/* Other routes */}
-            </Routes>
-          </Box>
-
-          <Footer /> {/* Render the Footer component here */}
-        </Box>
-      </Router>
-    </ThemeProvider>
+    <Box sx={{ width: "100vw", overflowX: "hidden" }}>
+      <Header />
+      <SmartWaterManagement/>
+      <HeroSection/>
+      <OurSolutions />
+      <Products/>
+      <OurClients />
+      <Footer />
+    </Box>
   );
 };
 

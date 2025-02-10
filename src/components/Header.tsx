@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItemButton, ListItemText, useMediaQuery, useTheme } from '@mui/material';
 import { Link } from 'react-router-dom';
-import CircleIcon from '@mui/icons-material/Circle';
 import MenuIcon from '@mui/icons-material/Menu'; // Import hamburger icon
 import '../styles/Header.css';
+import "@fontsource/krona-one"; // Import Krona One font
+
 
 const Header: React.FC = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
-
-  // Debugging isMobile
-  console.log("isMobile:", isMobile);
 
   const toggleDrawer = (open: boolean) => {
     setDrawerOpen(open);
@@ -38,6 +36,11 @@ const Header: React.FC = () => {
         <ListItemButton component={Link} to="/contact">
           <ListItemText primary="Contact Us" />
         </ListItemButton>
+
+        {/* Sign In Button inside Drawer for Mobile */}
+        <ListItemButton component={Link} to="/signin">
+          <ListItemText primary="Sign In" />
+        </ListItemButton>
       </List>
     </Box>
   );
@@ -46,11 +49,33 @@ const Header: React.FC = () => {
     <AppBar position="static" className="header">
       <Toolbar className="toolbar">
         <Box className="logo-container" sx={{ marginLeft: '45px' }}>
-          <IconButton edge="start" color="inherit" aria-label="menu" className="icon-button">
-            <CircleIcon className="circle-icon" />
+          <IconButton edge="start" color="inherit" aria-label="menu" className="icon-button" sx={{
+            backgroundColor: 'white',
+            borderRadius: '50%',
+            padding: '8px',
+          }}>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/Adayanta.png`}
+              style={{
+                width: "40px",
+                height: "40px",
+              }}
+            />
           </IconButton>
-          <Typography variant="h6" component={Link} to="/" className="logo-text" sx={{ marginLeft: '20px' ,fontFamily: 'Krona One' }} >
-          ADYANTA
+          <Typography
+            variant="h6"
+            component={Link}
+            to="/"
+            sx={{
+              fontFamily: "Krona One, sans-serif",
+              textDecoration: "none",
+              color: "#006F4E",
+              textAlign: { xs: "center", sm: "left" },
+              width: { xs: "60%", sm: "auto" },
+              gap: "2px"
+            }}
+          >
+            ADYANTA
           </Typography>
         </Box>
 
@@ -81,12 +106,14 @@ const Header: React.FC = () => {
         {/* Desktop view: Show sign-in button */}
         {!isMobile && (
           <Box>
-            <Button variant="contained" className="sign-in-button" sx={{ marginRight: '60px' ,borderRadius:"50px"}}>
+            <Button variant="contained" className="sign-in-button" sx={{ marginRight: '40px', borderRadius: "10px" }}>
               Sign In
             </Button>
           </Box>
         )}
       </Toolbar>
+
+                
     </AppBar>
   );
 };

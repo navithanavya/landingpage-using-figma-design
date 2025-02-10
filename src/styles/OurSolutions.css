@@ -1,0 +1,157 @@
+/* OurSolutions.css */
+
+/* Default styling for desktop */
+.solution-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  
+
+/* Image/Icon styling */
+.solution-image {
+    max-width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Heading */
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .solution-box {
+        flex-direction: column; /* Stack everything */
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .solution-image {
+        max-width: 60px;
+        height: auto;
+        margin-bottom: 10px; /* Space between image and text */
+    }
+
+    .solution-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h6 {
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* Desktop View */
+@media (min-width: 601px) {
+    .solution-box {
+        flex-direction: row; /* Side by side layout */
+        align-items: center;
+        text-align: left;
+    }
+
+    .solution-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    h6 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+@media (max-width: 600px) {
+    .solution-box {
+        display: flex;
+        flex-direction: row; /* Ensures icon, title, and description stay in a row */
+        align-items: flex-start; /* Aligns items to the top */
+        gap: 10px; /* Adds space between icon and text */
+        text-align: left;
+    }
+
+    .solution-image {
+        width: 50px; /* Adjust icon size */
+        height: auto;
+        flex-shrink: 0; /* Prevents icon from shrinking */
+    }
+
+    .solution-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Keeps text aligned */
+        flex: 1; /* Ensures content takes the remaining space */
+    }
+
+    h6 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 14px;
+        margin: 5px 0 0 0;
+        text-align: left;
+    }
+}
+@media (max-width: 600px) {
+    .solution-box {
+        display: flex;
+        flex-direction: row; /* Keeps icon, title, and description in a row */
+        align-items: flex-start; /* Aligns everything to the top */
+        gap: 10px; /* Adds space between icon and text */
+        text-align: left;
+    }
+
+    .solution-image {
+        width: 50px; /* Adjust icon size */
+        height: auto;
+        flex-shrink: 0; /* Prevents icon from shrinking */
+    }
+
+    .solution-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align text to the left */
+        flex: 1; /* Ensures text container fills available space */
+    }
+
+    h6 {
+        font-size: 16px;
+        margin: 0;
+        font-weight: bold;
+        text-align: left; /* Ensures title aligns left */
+    }
+
+    p {
+        font-size: 14px;
+        margin-top: 5px;
+        text-align: left; /* Ensures description aligns left */
+    }
+}

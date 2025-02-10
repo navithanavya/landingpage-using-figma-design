@@ -1,0 +1,43 @@
+/* Style the card container to center it */
+.our-clients-wrapper .MuiGrid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.our-clients-wrapper .MuiGrid-item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+/* Add margin-bottom for mobile and tablet views */
+.client-card {
+  margin-bottom: 20px; /* Adjust spacing between cards for all views */
+}
+
+/* Adjustments for tablet view (spacing between cards) */
+@media (max-width: 900px) {
+  .client-card {
+    margin-right: 15px; /* Space between cards on tablet */
+    /* Styling the cards with margin */
+
+  }}
+/* Tablet and desktop: spacing between cards */
+@media (min-width: 600px) {
+  .client-card {
+    margin-right: 20px; /* Space between cards in tablet/desktop view */
+  }
+}
+/* OurClients.css */
+
+/* Media query for mobile view */
+@media (max-width: 600px) {
+  .pagination-wrapper .pagination-btns .MuiButton-root {
+    position: absolute;
+    top: 3%; /* Move arrows up by 3px */
+    right: 3%;
+  }
+}
+
+  
+
